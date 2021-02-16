@@ -4,19 +4,29 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* 1st for color, 2nd for type, will just color selected area */
 }
+/* cascading */
+body {
+    color: red;
+}
+
 h1 {
     color: white;
 }
+/* Specificity: 0001 */
 /* Paragraph font color */
 p {
-    background-color: lightcoral;
+    background-color: lightgoldenrodyellow;
 }
 
 /* Selecting multiple elements to apply same styles */
-h1,h2,h3,h4 {
+h1,
+h2,
+h3,
+h4 {
     text-decoration: underline;
 }
 /* Descendant selector */
+/* Specificity 0002 */
 nav ul {
     list-style: none;
 }
@@ -28,6 +38,7 @@ text-decoration: none;
 }
 
 /* Class name selector */
+/* Specificity 0010 */
 .orange-link {
 background-color: darkslategray;
 color: orange;
@@ -105,3 +116,24 @@ Styling Navigation
  dl ul li:nth-child(2n){
      background-color: white;
  }
+ /* CSS Specificity */
+ /* specificity: 0002 */
+ body footer{
+     background-color: rgb(0, 0, 0);
+ }
+
+ /* specificity: 0001 */
+ footer{
+    background-color: #d5836c; 
+    padding: 20px;
+}
+/* specificity: 0010 */
+.site-footer {
+    background-color: cornflowerblue;
+}
+
+/* 0011 */
+footer.site-footer{
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
