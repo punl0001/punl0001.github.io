@@ -67,7 +67,7 @@ body{
 
 
 
-h1. h2{
+h1, h2{
 font-weight: bold;
 /* top left-right bottom */
 margin: 1em 0 0.5em;
@@ -256,3 +256,4 @@ color: #fff;
     }
 }
 
+}
