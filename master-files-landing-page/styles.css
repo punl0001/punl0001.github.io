@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.logo {
+    width: 100px;
+}
+body {
+ background-color: white;;
+  font-family: 'Montserrat';
+
+ 
+}
+main{
+    display: flex;
+
+    /* background-image: url('./images/bg-image/scooter.svg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: 40%; */
+    padding-left: 200px;
+    padding-right: 200px;
+}
+form {
+    border: 1px solid black;
+}
+h1 {
+    font-family: 'Montserrat';
+    font-size: 3.5rem;
+}
+form {
+    display: block;
+    /* float: right; */
+    margin: 0%;
+    border-radius:  40px;
+    padding: 1.8%;
+    background-color: #f7f7ff;
+    border: none;
+}
+
+footer {
+    background-color: #fffd8c;
+    margin: 0px;
+}
+
+
+
+
+ 
