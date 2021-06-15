@@ -1,47 +1,352 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
-.logo {
-    width: 100px;
-}
-body {
- background-color: white;;
-  font-family: 'Montserrat';
-
- 
-}
-main{
-    display: flex;
-
-    /* background-image: url('./images/bg-image/scooter.svg');
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: 40%; */
-    padding-left: 200px;
-    padding-right: 200px;
-}
-form {
-    border: 1px solid black;
-}
-h1 {
-    font-family: 'Montserrat';
-    font-size: 3.5rem;
-}
-form {
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
-    /* float: right; */
-    margin: 0%;
-    border-radius:  40px;
-    padding: 1.8%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* MOBILE VERSION */
+html {
     background-color: #f7f7ff;
-    border: none;
+    display: block;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+h2,
+h3 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+main {
+    margin: 0 30px;
 }
 
 footer {
+
     background-color: #fffd8c;
-    margin: 0px;
+    margin-top: 20px;
+    padding: 20px 30px 20px 30px;
+
 }
 
+.logo {
+    width: 15%;
+    margin: 0 30px;
+    margin-top: 10px;
+}
 
+.scooter {
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
 
+.apply_now {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 4px 6px 6px 4px lightgrey;
+    margin-bottom: 30px;
+}
 
- 
+.apply_now input {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: #f7f7ff;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.button input {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #57EEAB;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    width: 100%;
+}
+
+.applied a {
+
+    text-decoration: none;
+    color: red;
+}
+
+.footer_input input {
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    color: grey;
+    margin: 8px 0;
+}
+
+.calculate input {
+    background-color: #ff8480;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.footer_input {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hours {
+    flex-basis: calc(30% - 1rem);
+    margin-right: 20px;
+}
+
+.city {
+    flex-basis: calc(70% - 1rem);
+    margin-right: 12px;
+}
+
+.calculate {
+    flex-basis: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    margin: 5px auto;
+}
+
+/* TABLET VERSION */
+
+@media screen and (min-width: 600px) {
+
+    .scooter {
+        margin-top: 0px;
+    }
+
+    .footer_input {
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    main {
+        margin: 0 150px;
+    }
+
+    .logo {
+        margin: 0 150px;
+    }
+
+    .hours {
+
+        flex-basis: calc(20% - 20px);
+    }
+
+    .city {
+        flex-basis: calc(30% - 20px);
+    }
+
+    div .calculate {
+        flex-basis: calc(47% - 20px);
+
+    }
+}
+
+/* DESKTOP VERSION */
+@media screen and (min-width: 1080px) {
+
+    .scooter {
+        width: 600px;
+    }
+
+    .logo {
+        width: 7%;
+        padding-bottom: 80px;
+        margin: 0 150px;
+        margin-top: 10px;
+    }
+
+    .text {
+        display: grid;
+        grid-template-areas: 'paragraph logo apply';
+        grid-gap: 20px;
+    }
+
+    .text .paragraph {
+        grid-area: paragraph;
+    }
+
+    .text .skuter {
+        grid-area: logo;
+    }
+
+    .text .apply_1 {
+        grid-area: apply;
+    }
+
+    .checkbox .agree {
+        width: 100%;
+    }
+}
