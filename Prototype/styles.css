@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+nav {
+    display: block;
+    
+}
+.container img{ 
+width: 683px;
+margin: auto;
+display: flex;
+align-items: center;
+}
+
+main img{
+    width: 300px;
+    padding-bottom: 50px;
+    
+}
+
+footer {
+    background-color: #faab67;
+    color: white;
+    padding: 10px 50px;
+}
