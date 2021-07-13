@@ -1,3 +1,4 @@
+/* MOBILE VERSION */
 * {
     box-sizing: border-box;
 }
@@ -15,7 +16,7 @@ header {
     width: 100%;
     margin: auto;
 }
-
+/* STYLING NAV */
 nav {
     background-color: #faab67;
     font-size: 1.3rem;
@@ -48,10 +49,10 @@ nav ul li a {
     color: white;
     text-decoration: none;
 
-    /* display: block; */
+
 
 }
-
+/* STYLING HEADER */
 .container img {
     max-width: 100%;
     margin: auto;
@@ -88,7 +89,7 @@ main img {
     width: 50%;
 
 }
-
+/* STYLING FOOTER AND ADDING SPACE BETWEEN THE ITEMS */
 footer {
     background-color: #faab67;
     padding: 10px 40px;
@@ -101,7 +102,7 @@ footer {
 .foot {
     color: white;
 }
-
+/* ADDING MARGIN AND SPACE TO THE ICONS */
 .social {
     margin-top: 1rem;
     display: block;
@@ -111,14 +112,18 @@ footer {
 
 .face {
     padding-left: 30px;
-
+    
 }
+
+/* STYLING CONTACT FORM */
 
 .send_now {
     border-radius: 8px;
     padding: 20px 40px;
     box-shadow: 4px 6px 6px 4px lightgrey;
 }
+
+/* ADDING FORM BACKGROUND COLOR AND MARGINS */
 
 .send_now input {
     box-sizing: border-box;
@@ -165,6 +170,7 @@ div .send_now {
     margin: 0 auto;
 
 }
+/* TABLET VERSION */
 
 @media (min-width: 640px) {
     h2 {
@@ -200,12 +206,13 @@ div .send_now {
     
 }
 
-@media screen and (min-width: 1080px) {
+/* DESKTOP VERSION */
 
+@media screen and (min-width: 1080px) {
 
     nav ul li {
         display: inline-block;
-        width: 33%;
+        width: 30%;
         border-right: 1px solid white;
         /* position: fixed; */
         
@@ -215,14 +222,13 @@ div .send_now {
         width: 100%;
     }
 
-
-
     header {
         background-image: url(/images/melt1.png), url(/images/melt2.png);
         background-size: 12%;
         background-repeat: no-repeat;
         background-position: right top, left bottom;
     }
+    
 
 
     }
