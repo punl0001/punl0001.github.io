@@ -23,6 +23,7 @@ nav {
     font-weight: 700;
     text-align: center;
     width: 100%;
+    ;
 
 }
 
@@ -185,9 +186,10 @@ div .send_now {
     }
 
     nav ul li {
-        display: inline-block;
-        border-bottom: none;
-        border-right: 3px solid white;
+        display: block;
+        border-bottom: 1px solid white;
+        width: 100%;
+        
     }
 
     main img {
@@ -195,22 +197,29 @@ div .send_now {
         width: 33%;
     }
 
-    nav ul li a {
-        padding-inline: 40px 40px;
-
-    }
+    
 }
 
 @media screen and (min-width: 1080px) {
 
+
+    nav ul li {
+        display: inline-block;
+        width: 33%;
+        border-right: 1px solid white;
+        /* position: fixed; */
+        
+    }
     main p strong {
 
         width: 100%;
     }
 
+
+
     header {
         background-image: url(/images/melt1.png), url(/images/melt2.png);
-        background-size: 14%;
+        background-size: 12%;
         background-repeat: no-repeat;
         background-position: right top, left bottom;
     }
@@ -219,6 +228,3 @@ div .send_now {
     }
 
     
-
-
-}
