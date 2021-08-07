@@ -41,6 +41,21 @@ nav ul li{
 nav ul li:hover{
     background-color: rgba(1, 1, 1,0.2);
 }
+h1{
+    text-align: center;
+}
+.red {
+    max-width: 70%;
+    margin: auto;
+    
+}
+
+.gallery-img {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    
+}
 
 .red img {
     display: block;
@@ -48,10 +63,18 @@ nav ul li:hover{
     margin: auto;
     min-width: 80%;
 }
-.paragraph{
-    width: 85%;
+.cv{
+    width: 89%;
+    max-width: 85%;
     margin: auto;
     padding-top: 40px;
+}
+
+.paragraph{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 40px;
+    
 }
 footer{
     text-align: left;
@@ -63,3 +86,59 @@ footer{
     background-color: #f3e0dd;
     padding-left: 50px;
 }
+
+
+@media (min-width: 680px){
+.wrapper {
+    max-width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+@media (min-width: 1080px){
+    .wrapper {
+        max-width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: .5rem;
+    }
+    
+    .gallery-img {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .wrapabout {
+        max-width: 70%;
+        padding: 40px;
+        margin: 0 auto;
+        border: 1px solid #f3e0dd;
+        border-radius: 2%;
+    }
+    .content {
+     
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .red {
+        min-width: 80%;
+    }
