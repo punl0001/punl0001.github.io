@@ -247,11 +247,6 @@ h2:after {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.field:focus {
-    background-color: #fff;
-    border: 2px solid rgba(243, 224, 221, 1);
-}
-
 .area {
     min-height: 150px;
 }
@@ -273,7 +268,9 @@ h2:after {
 }
 
 @media (min-width: 680px) {
-
+.contact-box {
+    max-width: 500px;
+}
     .wrapper {
         max-width: 80%;
         padding: 2rem;
@@ -333,7 +330,7 @@ h2:after {
         }
 
         .wrapabout {
-            max-width: 70%;
+            max-width: 850px;
             padding: 40px;
             margin: 0 auto;
             border: 1px solid #f3e0dd;
@@ -348,6 +345,7 @@ h2:after {
             width: 60%;
         }
         .contact-box {
+            max-width: 900px;
             grid-template-columns: repeat(2, 1fr)
         }
         }
